@@ -1,0 +1,91 @@
+/* pseudo-elementos  */
+
+p::first-line { /* a primeira linha da classe <p> é alterado */
+    color: green;
+}
+
+p::first-letter { /* a primeira letra da classe <p> é alterado  */
+    color: green;
+}
+
+p::before { /* tudo que estiver antes da classe <p> é alterado */
+    color: green;
+}
+
+p::after { /* tudo que estiver depois da classe <p> é alterado*/
+    color: green;
+}
+
+p::selection { /* tudo que o mouse selecionar muda */
+    color: green;
+}
+
+/* seletores */
+
+#container > p { /* altera os <p> que são diretamente filhos desse ID */
+    color: green;
+}
+
+#container + p { /* altera somente o <p> posterior, nenhum mais */
+    color: green;
+}
+
+#container ~ p { /* altera todos os <p> que estão depois desse ID */
+    color: green;
+}
+
+#container p { /* altera todos os <p> que estiverem dentro desse ID (todos) */
+    color: green;
+}
+
+[width="300"] { /* pega todos que tem width igual a 300 */
+    color: green;
+}
+
+[title~="titulo1"] { /* pega todos que tem o valor titulo1 atribuido ao title */
+    color: green;
+}
+
+[title^="tit"] { /* pega todo os valores de title que começarem com 'tit' */
+    color: green;
+}
+
+[title$="1"] { /* pega todos os valores atribuidos a title que terminarem em 1 */
+    color: green;
+}
+
+[title*="tu"] { /* pega o valor 'tu' em qualquer lugar da palavra (inicio, meio ou o final dela) */
+    color: green;
+}
+
+/* pseudo-classes */
+
+input:focus {
+    color: red;
+}
+
+li:first-child { /* pega o primeiro <li>, se ele não for o primeiro, então, não há alterações*/
+    color: green;
+}
+
+li:nth-child(2) { /* pega o segundo elemento da lista, considerando todos os elemento e de todos os tipos */
+    color: green;
+}
+
+li:nth-of-type(even) { /* vai pegar o segundo do tipo especifico <li> */
+    color: green;
+}
+
+li:nth-last-child(odd) { /* conta de baixo para cima respectivamente, considerando todos os filhos*/
+    color: green;
+}
+
+li:nth-last-of-type(2n) { /* conta de baixo para cima respectivamente, considerando apenas os do tipo <li> */
+    color: green;
+}
+
+/*
+2n = multiplos de 2
+even = numeros pares
+odd = numeros ímpares
+*/

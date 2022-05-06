@@ -1,0 +1,44 @@
+#container {
+    display: flex; 
+    /* deixa os elementos tanto em linhas como em colunas de forma responsiva */
+
+     flex-direction: column;
+    /* row já está por padrão, tendo também as opções: row, column, row-reverse, column-reverse */
+
+     flex-wrap: nowrap; 
+     /* nowrap está por padrão, porém, a função do wrap é manter a todo custo as definições de largura e altura pré estabelecidas */
+
+    flex-flow: row nowrap; 
+    /* O flex-flow junta o flex-direction e o flex-wrap tudo em um mesmo atributo */
+
+    justify-content: space-between; 
+    /* O justify-content alinha horizontalmente os elementos e tem por padrão o FLex-Start, mas as opções são: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left */
+
+     align-items: stretch;  
+     /* O align-items determina como os itens ficarão alinhados no container    verticalmente e tem por padrão o valor Stretch, porém, seus outros valores são: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end.*/
+
+    align-content: center; 
+    /* O align-content determina o espaço entre as linhas */
+
+    background-color: darkgray;
+    color: white;
+    height: 800px;
+}
+
+.r1 {
+    background-color: red;
+}
+
+.r2 {
+    background-color: blue;
+}
+
+.r3 {
+    background-color: green;
+}
+
+.rect {
+    /* height: 600px; */
+    width: 400px; 
+}
+

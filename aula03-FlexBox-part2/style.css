@@ -1,0 +1,33 @@
+#container {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: darkgrey;
+    height: 290px;
+    color: white;
+}
+
+
+.r1 {
+    background-color: red;
+    flex-grow: 1;
+    /* o flex-grow (tem por padrão o valor 0)é utilizado para que o elemento possa cobrir a linha inteira, também é usado para que seja proporcional a um width já declarado, tornando-se assim muito responsivo */
+}
+
+.r2 {
+    background-color: blue;
+    flex-grow: 3;
+    align-self: flex-end;
+    /* o align-self serve para atribuir um valor do "align-items" em apenas um elemento */
+}
+
+.r3 {
+    flex-shrink: 1; 
+    /* flex-shrink diz se o elemento pode ou nao encolher e por padrão ele é 1, sendo assim, o '0' diz que nao, e o '1' diz que sim. */
+    flex-grow: 1;
+    background-color: green;
+}
+
+.rect {
+    height: 150px;
+    width: 150px; 
+}

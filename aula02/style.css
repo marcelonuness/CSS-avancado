@@ -1,0 +1,44 @@
+:root {
+    --var-color: aqua;
+    --var-size: 400px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1220px;
+    height: 789px;
+    background-color: var(--var-color);
+}
+
+#container {
+    width: calc(100% - 160px); /* function calc serve pra deixar tudo proporcional */
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.5);
+    margin: auto;
+    transform: scale(0.7);
+}
+
+.primeiro {
+    width: var(--var-size);
+    height: var(--var-size);
+    background-color: green;
+    transform: rotate(30deg) /* o proprio nome já diz, rotaciona o elemento */
+}
+
+.segundo {
+    width: var(--var-size);
+    height: var(--var-size);
+    background-color: blue;
+    transform: scale(2, 1); /* x e y */ /* scale é multiplicar o tamanho em escalas */
+}
+
+.terceiro {
+    width: var(--var-size);
+    height: var(--var-size);
+    background-color: paleturquoise;
+    transform: skew(30deg, 190deg) /* entorta de um jeito esquisito */
+}

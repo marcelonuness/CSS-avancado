@@ -1,0 +1,54 @@
+#container {
+    background-color: darkgrey;
+    color: white;
+
+
+    display: grid;
+    grid-template: auto auto auto auto / auto auto auto auto auto auto; 
+    /* primeiro passa as linhas e depois as colunas. */
+    
+    /* row-gap: 10px;
+    column-gap: 10px; */
+    /* gap: 10px; */
+
+    /* justify-items: center;
+    align-items: center; */
+
+    /* justify-content: center;
+    align-content: flex-start; */
+
+    /* grid-template-areas: "a6 a6 a6 a2 a2 a2"
+                         "a3 a3 a4 a4 a4 a4"
+                         "a5 a5 a5 a1 a1 a1"; */
+    
+    
+                         
+}
+
+.rect {
+    /* height: 100px; */
+    /* width: 100px; */
+}
+
+.r1 {
+    background-color: red;
+}
+
+.r2 {
+    background-color: blue;
+}
+
+.r3 {
+    background-color: green;
+}
+
+.item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item2 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
